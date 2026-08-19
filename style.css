@@ -1,0 +1,141 @@
+*, *::before, *::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+body {
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ background: #f5f7fb;
+ overflow-x: hidden;
+ color: #172033;
+
+}
+html {
+    color-scheme: light;
+
+}
+button,input,textarea,select {
+    font: inherit;
+}
+button,a{
+    -webkit-tab-highlight-color:transparent;
+    img {
+         display: block;
+         max-width: 100%;
+    }
+}
+
+.page {
+    width: min(1200px, cal(100% -2rem));
+    margin-inline: auto;
+    padding-block: 3rem 6rem;
+}
+.intro {
+    max-width:720px;
+    margin-bottom: 3rem;
+
+}
+.intro h1 {
+    margin: 0.4rem 0 1rem;
+    font-size: clamp(2rem,7vw,4.5rem);
+    line-height: 1;
+}
+.intro p {
+    color: #667085;
+    line-height: 1.7;
+}
+.eyebrow {
+    margin: 0;
+    color: #3157d5;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.carousel {
+    --slides-per-view:1;
+    --carousel-gap:1rem;
+    position: relative;;
+}
+
+.carousel__header {
+    display:flex;
+    align-items:end;
+    justify-content: space-between;
+    gap:1rem;
+    margin-bottom: 1.25rem;
+}
+
+.carousel__header h2 {
+    margin:0.25rem 0 0;
+    font-size:clamp(1.6,4vw,2.3rem);
+}
+.carousel__controls {
+    display: flex;
+    gap: 0.65rem;
+}
+.carousel__button {
+    display: grid;
+    place-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    padding: 0;
+    border:1px solid #d4d9e2;
+    border-radius: 100%;
+    background-color: white;
+    color: #172033;
+    transition: transform 180ms ease, background-color 180ms ease, color 180ms ease, opacity 180ms ease;
+    cursor: pointer;
+}
+.carousel__button:hover:not(:disabled) {
+    border:1px solid #172033;
+  background-color: #172033;
+   color: white;
+   transform: scale(1.2);
+}
+.carousel__viewport {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.carousel__track {
+
+}
+.carousel__slide {
+box-shadow: 0px 0px 5px;
+padding: 10px;
+width: 100%;
+
+}
+.course-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.course-card__number {
+color: gray;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #3157d5;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 1.2rem;
+}
+.course-card__category {
+font-weight: bolder;
+text-transform: uppercase;
+color: #667085;
+}
+p {
+    max-width: 250px;
+    text-align: center;
+    line-height: 15px;
+    margin: 10px 0px;
+}

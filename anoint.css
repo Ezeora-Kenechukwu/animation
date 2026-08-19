@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+ol,ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.head_section {
+    min-height: 50px;
+    background-color: indigo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    
+}
+.header {
+    display: flex;
+    max-height: 80px;
+    background-color: aquamarine;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    position:sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.logo {
+color: darkblue;
+text-transform: uppercase;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bolder;
+}
+.navbar {
+
+}
+.navlinks {
+display: flex;
+gap: 10px;
+position: relative;
+}
+.navlink a{
+color: blue;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.categoies {
+position: absolute;
+background-color: beige;
+
+box-shadow: 0px 0px 5px orange;
+top: 25px;
+height: 0;
+padding: 0;
+overflow: hidden;
+transition: all 0.5s ease-in-out;
+}
+.navlink:hover .categoies {
+height: 150px;
+padding: 10px 20px;
+overflow: hidden;
+} 
+.category {
+font-family: Arial, Helvetica, sans-serif;
+}
+a.category_link {
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+font-size: 0.8rem;
+}
+
+.section {
+    min-height: 100vh;
+    padding-top: 85px;
+}
+.section#home {
+    background-color: #ff00ff;
+}
+.section#about {
+    background-color: #00f0ff;
+}
+.section#contact {
+    background-color: #0f0df0;
+}
+.section#product {
+    background-color: #123456;
+}
+.section#register {
+    background-color: #246824;
+}
+
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Carousel</title>
+</head>
+<body>
+    <main class="page">
+        <section class="intro">
+            <p class="eyebrow">What The Users Say</p>
+            <h1>Featured Courses</h1>
+            <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta!</p>
+        </section>
+    
+    <section class="carousel" 
+    data-carousel
+    data-autoplay="true"
+    data-autoplay-delay="'5000"
+    aria-label="Featured Courses"
+    aria-roledescription="carousel"
+    >
+    <!-- Carousel Header -->
+     <div class="carousel__header">
+        <div>
+            <p class="eyebrow">
+                Our Courses
+            </p>
+            <h2>Countinue Learning</h2>
+        </div>
+
+        <div class="carousel__controls" data-carousel-controls>
+            <button class="carousel__button" data-carousel-previous type="button" aria-label="Previous Slide">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="carousel__button" data-carousel-next type="button" aria-label="Next Slide">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+        </div>
+     </div>
+      <!--
+                VIEWPORT
+
+                Anything outside this element
+                will be visually hidden.
+            -->
+                <div class="carousel__viewport" data-carousel-viewport tabindex="0">
+                     <!--
+                    TRACK
+
+                    JavaScript moves this container.
+                -->
+                    <div class="carousel__track" data-carousel-track>
+                        <!-- ********First Slide***** -->
+                        <article class="carousel__slide">
+                            <div class="course-card">
+                                <div class="course-card__number">
+                                    01
+                                </div>
+                                <p class="course-card__category">
+                                    Foundations
+                                </p>
+                                <h3>
+                                HTML Fundamentals
+                            </h3>
+
+                            <p>
+                                Learn semantic HTML, document
+                                structure, accessibility and
+                                modern markup practices.
+                            </p>
+
+                            <a href="#">
+                                Explore course
+                            </a>
+                            </div>
+                        </article>
+                        <!-- ********END OF First Slide***** -->
+                        <!-- ********Second Slide***** -->
+                        <article class="carousel__slide">
+                            <div class="course-card">
+                                <div class="course-card__number">
+                                    02
+                                </div>
+                                 <p class="course-card__category">
+                                Styling
+                            </p>
+
+                            <h3>
+                                Modern CSS
+                            </h3>
+
+                            <p>
+                                Master layouts, responsive
+                                design, animations, Grid
+                                and Flexbox.
+                            </p>
+
+                            <a href="#">
+                                Explore course
+                            </a>
+
+                            </div>
+                        </article>
+                        <!-- ********END OF second Slide***** -->
+                    </div>
+                </div>
+                  <!-- Navigation dots -->
+
+            <div
+                class="carousel__footer"
+            >
+
+                <div
+                    class="carousel__dots"
+                    data-carousel-dots
+                    aria-label="Choose carousel position"
+                ></div>
+
+            </div>
+
+
+            <!--
+                Screen-reader announcement.
+                Visually hidden from sighted users.
+            -->
+
+            <p
+                class="sr-only"
+                data-carousel-status
+                aria-live="polite"
+                aria-atomic="true"
+            ></p>
+    </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
